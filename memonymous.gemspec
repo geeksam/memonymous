@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Sam Livingston-Gray"]
   s.email       = ["geeksam@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Yet another memoizing gem.  This one doesn't pollute your method namespace.}
+  s.description = %q{VERY SIMPLISTIC memoization for functions (one memoized value per function; no regard for arguments). Uses UnboundMethods instead of method aliasing, so you don't see extra method names when you inspect your object.}
 
   s.rubyforge_project = "memonymous"
 
