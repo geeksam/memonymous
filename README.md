@@ -6,7 +6,7 @@ Public domain (more or less).  See the LICENSE file for more information.
 
 ## Origin
 
-Inspired by a recent Hangman puzzle at the Portland Ruby Brigade [link](http://groups.google.com/group/pdxruby/browse_thread/thread/19d58126a268e89a/078efefc26ddcf7b), I decided to try writing a memoization module that used `super` instead of mucking around with `alias_method_chain`.
+Inspired by a recent Hangman puzzle at the Portland Ruby Brigade ([link](http://groups.google.com/group/pdxruby/browse_thread/thread/19d58126a268e89a/078efefc26ddcf7b)), I decided to try writing a memoization module that used `super` instead of mucking around with `alias_method_chain`.
 
 Unfortunately, the only way I could think of to get this to work was to override the including class's .new method, so that all new instances were actually instances of a newly-created subclass...and that just seemed like a Really Bad Idea&trade;.
 
